@@ -4,6 +4,7 @@ class ProductsController < ApplicationController
   def index
     @products = Product.all
     set_product_column
+    set_category_column
   end
 
   def search
